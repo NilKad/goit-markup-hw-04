@@ -149,12 +149,8 @@ ul {
 
 .social-list {
   display: flex;
-  width: 206px;
-  height: 44px;
-
-  /* align-items: center; */
-  /* justify-content: center; */
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 
   /* outline: 1px solid red; */
 }
@@ -178,38 +174,14 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--main-active-color);
   --color1: var(--main-sec-color);
 }
 .footer .social-link {
   --color1: var(--main-sec-color);
 }
-/* .social-link.instagram {
-  background-image: url('../images/instagram.svg');
-}
-.social-link.twitter {
-  background-image: url('../images/twitter.svg');
-}
-.social-link.facebook {
-  background-image: url('../images/facebook.svg');
-}
-.social-link.linkedin {
-  background-image: url('../images/linkedin.svg');
-}
-*/
-/* .footer-social .social-link.instagram {
-  background-image: url('../images/instagram-w.svg');
-}
-.footer-social .social-link.twitter {
-  background-image: url('../images/twitter-w.svg');
-}
-.footer-social .social-link.facebook {
-  background-image: url('../images/facebook-w.svg');
-}
-.footer-social .social-link.linkedin {
-  background-image: url('../images/linkedin-w.svg');
-} */
 
 /*         MAIN        */
 /* Header */
@@ -360,23 +332,20 @@ ul {
 /* benefits */
 
 .benefits-icon-div {
-  display: block;
+  display: flex;
   width: 270px;
   height: 120px;
+
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  align-items: center;
+  justify-content: center;
   background-color: var(--main-trhid-bg);
   border-radius: 4px;
-
-  /* outline: 1px solid red; */
-  /* align-items: center; */
 }
 .icon-item {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
+
 .benefits-list {
   display: flex;
 }
@@ -399,29 +368,7 @@ ul {
   text-transform: uppercase;
   text-align: left;
 }
-/* .benefits-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  border-radius: 4px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--main-trhid-bg);
-}
-.icon-antenna::before {
-  background-image: url(../images/antenna1.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/clock1.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram1.svg);
-}
-.icon-kosmos::before {
-  background-image: url(../images/astronaut1.svg);
-} */
+
 /* Чем мы занимаемся */
 .whotis-list {
   display: flex;
@@ -473,15 +420,16 @@ ul {
 }
 .team .social-list {
   margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 /* Clients  */
 .clients-list {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  /* justify-content: space-between; */
 }
 
 .clients-link {
@@ -495,7 +443,8 @@ ul {
   border-radius: 4px;
 }
 
-.clients-link:hover {
+.clients-link:hover, 
+.clients-link:focus {
   --color1: var(--main-active-color);
   border-color: var(--main-active-color);
 }
@@ -555,7 +504,15 @@ ul {
 
 .footer-item {
   display: flex;
+  align-items: baseline;
   /* align-items: center; */
+}
+.footer-social {  
+  margin-left: 70px;
+}
+.footer .social-list {
+  margin-top: 20px;
+  /* background: rgba(255, 255, 255, 0.1); */
 }
 .footer-social-text {
   font-weight: 700;
@@ -563,19 +520,8 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.footer-social {
-  display: block;
-  margin-top: auto;
-  width: 206px;
-  height: 80px;
 
-  margin-left: 70px;
-  margin-bottom: 40px;
-}
-.footer .social-list {
-  margin-top: 20px;
-  /* background: rgba(255, 255, 255, 0.1); */
-}
+
 /* Портфолио */
 
 .portfolio-filter {
@@ -595,11 +541,17 @@ ul {
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
 }
-.portfolio-item:hover {
+/* .portfolio-item:hover,
+.portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    /* outline: 2px solid red; */
 }
-
 .portfolio-list-tittle {
   font-weight: 700;
   font-size: 18px;
